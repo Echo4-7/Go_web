@@ -5,6 +5,7 @@ import (
 	"Web_app/dao/mysql"
 	"Web_app/dao/redis"
 	"Web_app/logger"
+	"Web_app/pkg/snowflake"
 	"Web_app/router"
 	"Web_app/settings"
 	"context"
@@ -25,28 +26,32 @@ func main() {
 		fmt.Printf("init settings failed, err: %v\n", err)
 		return
 	}
-	defer zap.L().Sync()
-	zap.L().Debug("logger init success...")
-
 	//2. 初始化日志
-	if err := logger.Init(); err != nil {
+	if err := logger.Init(settings.Conf.LogConfig); err != nil {
 		fmt.Printf("init logger failed, err: %v\n", err)
 		return
 	}
+	defer zap.L().Sync()
+	zap.L().Debug("logger init success...")
 
 	//3. 初始化mysql的连接
-	if err := mysql.Init(); err != nil {
+	if err := mysql.Init(settings.Conf.MySQLConfig); err != nil {
 		fmt.Printf("init mysql failed, err: %v\n", err)
 		return
 	}
 	defer mysql.Close()
 
 	//4. 初始化redis连接
-	if err := redis.Init(); err != nil {
+	if err := redis.Init(settings.Conf.RedisConfig); err != nil {
 		fmt.Printf("init redis failed, err: %v\n", err)
 		return
 	}
 	defer redis.Close()
+
+	if err := snowflake.Init(settings.Conf.StartTime, settings.Conf.MachineID); err != nil {
+		fmt.Printf("init snowflake failed, err: %v\n", err)
+		return
+	}
 
 	// 初始化gin框架内置的校验器使用的全局翻译器
 	if err := controller.InitTrans("zh"); err != nil {
@@ -58,7 +63,7 @@ func main() {
 	r := router.SetupRouter()
 	//6. 启动服务（优雅关机）
 	srv := &http.Server{
-		Addr:    fmt.Sprintf(":%d", viper.GetInt("app.port")),
+		Addr:    fmt.Sprintf(":%d", viper.GetInt("port")),
 		Handler: r,
 	}
 

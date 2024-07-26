@@ -2,17 +2,27 @@ package logic
 
 import (
 	"Web_app/dao/mysql"
+	"Web_app/models"
 	"Web_app/pkg/snowflake"
 )
 
 // 存放业务逻辑代码
 
-func SignUp() {
+func SignUp(p *models.ParamSignup) (err error) {
 	// 1. 判断用户是否存在
-	mysql.QueryUserByUsername()
+	if err = mysql.CheckUserExist(p.Username); err != nil {
+		// 数据库查询出错
+		return err
+	}
+
 	// 2. 生成UID
-	snowflake.GenID()
-	// 3. 密码加密
-	// 4. 保存进数据库
-	mysql.InsertUser()
+	userId := snowflake.GenID()
+	// 构造User实例
+	user := &models.User{
+		UserId:   userId,
+		Username: p.Username,
+		Password: p.Password,
+	}
+	// 3. 保存进数据库
+	return mysql.InsertUser(user)
 }

@@ -1,7 +1,6 @@
 package snowflake
 
 import (
-	"fmt"
 	"time"
 
 	sf "github.com/bwmarrin/snowflake"
@@ -24,10 +23,10 @@ func GenID() int64 {
 	return node.Generate().Int64()
 }
 
-func main() {
-	if err := Init("2023-09-24", 1); err != nil {
-		fmt.Printf("init failed,err:%v\n", err)
-	}
-	id := GenID()
-	fmt.Println(id)
-}
+//func main() {
+//	if err := Init("2023-09-24", 1); err != nil {
+//		fmt.Printf("init failed,err:%v\n", err)
+//	}
+//	id := GenID()
+//	fmt.Println(id)
+//}

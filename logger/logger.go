@@ -2,6 +2,7 @@ package logger
 
 // 使用zap日志库记录日志信息
 import (
+	"Web_app/settings"
 	"github.com/spf13/viper"
 	"net"
 	"net/http"
@@ -20,8 +21,17 @@ import (
 var lg *zap.Logger
 
 // Init 初始化Logger
-func Init() (err error) {
-	writeSyncer := getLogWriter(viper.GetString("log.filename"), viper.GetInt("log.max_size"), viper.GetInt("log.max_age"), viper.GetInt("log.max_backups"))
+func Init(cfg *settings.LogConfig) (err error) {
+	writeSyncer := getLogWriter(
+		//viper.GetString("log.filename"),
+		//viper.GetInt("log.max_size"),
+		//viper.GetInt("log.max_age"),
+		//viper.GetInt("log.max_backups"),
+		cfg.Filename,
+		cfg.MaxSize,
+		cfg.MaxBackups,
+		cfg.MaxAge,
+	)
 	encoder := getEncoder()
 	var l = new(zapcore.Level)                                  // 造一个level
 	err = l.UnmarshalText([]byte(viper.GetString("log.level"))) // 从配置文件中读取日志级别，并将其反序列化为 zapcore.Level 类型

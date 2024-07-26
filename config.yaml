@@ -1,10 +1,9 @@
-app:
-  name: "Web_app"
-  mode: "dev"
-  port: 8080
-  version: "v0.0.1"
-  start_time: "2024-07-20"
-  machine_id: 1
+name: "Web_app"
+mode: "dev"
+port: 8080
+version: "v0.0.1"
+start_time: "2024-07-20"
+machine_id: 1
 
 log:
   level: "debug"
