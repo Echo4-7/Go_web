@@ -56,3 +56,46 @@
 {"level":"INFO","time":"2024-07-26T17:45:08.354+0800","caller":"logger/logger.go:77","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000816447}
 {"level":"INFO","time":"2024-07-26T17:52:34.491+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2024-07-26T17:52:34.491+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-26T18:58:19.005+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-07-26T18:58:28.063+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-26T18:58:28.064+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-26T21:22:04.079+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"ERROR","time":"2024-07-26T21:22:24.190+0800","caller":"controller/user.go:19","msg":"Signup with invalid param","error":"Key: 'ParamSignup.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignup.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2024-07-26T21:22:24.190+0800","caller":"logger/logger.go:87","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000506372}
+{"level":"INFO","time":"2024-07-26T21:24:09.634+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-26T21:24:09.634+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-26T21:24:15.651+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"ERROR","time":"2024-07-26T21:24:34.326+0800","caller":"controller/user.go:19","msg":"Signup with invalid param","error":"Key: 'ParamSignup.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag\nKey: 'ParamSignup.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2024-07-26T21:24:34.326+0800","caller":"logger/logger.go:87","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000418643}
+{"level":"INFO","time":"2024-07-26T21:25:08.304+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-26T21:25:08.305+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-26T21:27:55.051+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-07-26T21:28:04.343+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-26T21:28:04.343+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-26T22:21:18.943+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-07-26T22:21:55.715+0800","caller":"logger/logger.go:87","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000024996}
+{"level":"INFO","time":"2024-07-26T22:21:55.739+0800","caller":"logger/logger.go:87","msg":"/favicon.ico","status":200,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000068086}
+{"level":"INFO","time":"2024-07-26T22:31:04.204+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-26T22:31:04.205+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-27T11:14:48.871+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-07-27T11:14:53.032+0800","caller":"logger/logger.go:87","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000067214}
+{"level":"INFO","time":"2024-07-27T11:14:53.044+0800","caller":"logger/logger.go:87","msg":"/favicon.ico","status":200,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000022993}
+{"level":"INFO","time":"2024-07-27T11:20:37.753+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-27T11:20:37.754+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-27T11:20:39.820+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-07-27T11:20:42.204+0800","caller":"logger/logger.go:87","msg":"/ping","status":200,"method":"GET","path":"/ping","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000038747}
+{"level":"INFO","time":"2024-07-27T11:20:42.238+0800","caller":"logger/logger.go:87","msg":"/favicon.ico","status":200,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000015872}
+{"level":"INFO","time":"2024-07-27T15:15:55.373+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-27T15:15:55.374+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-27T16:01:39.340+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-07-27T16:02:53.573+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"GET","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000042174}
+{"level":"ERROR","time":"2024-07-27T16:03:28.144+0800","caller":"controller/user.go:70","msg":"Login with invalid param","error":"Key: 'ParamLogin.password' Error:Field validation for 'password' failed on the 'required' tag"}
+{"level":"INFO","time":"2024-07-27T16:03:28.144+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000385792}
+{"level":"INFO","time":"2024-07-27T16:03:40.625+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.014310045}
+{"level":"INFO","time":"2024-07-27T16:04:08.589+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-27T16:04:08.590+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-27T16:06:21.101+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-07-27T16:06:25.201+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.001164177}
+{"level":"INFO","time":"2024-07-27T16:08:50.729+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00064134}
+{"level":"INFO","time":"2024-07-27T16:31:44.967+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-27T16:31:44.967+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
