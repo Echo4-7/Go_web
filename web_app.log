@@ -99,3 +99,7 @@
 {"level":"INFO","time":"2024-07-27T16:08:50.729+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00064134}
 {"level":"INFO","time":"2024-07-27T16:31:44.967+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2024-07-27T16:31:44.967+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-07-28T16:52:29.613+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-07-28T16:53:22.407+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.002925589}
+{"level":"INFO","time":"2024-07-28T17:17:37.358+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-07-28T17:17:37.358+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}

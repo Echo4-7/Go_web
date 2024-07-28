@@ -3,7 +3,7 @@ package router
 import (
 	"Web_app/controller"
 	"Web_app/logger"
-	"Web_app/settings"
+	"Web_app/middlewares"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
@@ -18,11 +18,11 @@ func SetupRouter(mode string) *gin.Engine {
 	r.POST("/signup", controller.SignUpHandler)
 	// 登陆业务路由
 	r.POST("/login", controller.LoginHandler)
-	r.GET("/ping", func(c *gin.Context) {
-		//c.String(http.StatusOK, "pong")
-		c.JSON(http.StatusOK, gin.H{
-			"version": settings.Conf.Version,
-		})
+	r.GET("/ping", middlewares.JWTAuthMiddleware(), func(c *gin.Context) {
+		// 如果是登陆的用户,判断请求头中是否有有效的JWT
+
+		c.String(http.StatusOK, "pong")
+
 	})
 
 	r.NoRoute(func(c *gin.Context) {
@@ -37,4 +37,5 @@ func SetupRouter(mode string) *gin.Engine {
 	//	c.String(http.StatusOK, "ok")
 	//})
 	//return r
+
 }

@@ -1,12 +1,13 @@
 package controller
 
 import (
+	"Web_app/dao/mysql"
 	"Web_app/logic"
 	"Web_app/models"
+	"errors"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
 	"go.uber.org/zap"
-	"net/http"
 )
 
 // SignUpHandler 处理注册请求的函数
@@ -21,15 +22,14 @@ func SignUpHandler(c *gin.Context) {
 		errs, ok := err.(validator.ValidationErrors)
 		if !ok {
 			// 非validator.ValidationErrors类型错误直接返回
-			c.JSON(http.StatusOK, gin.H{
-				"msg": err.Error(),
-			})
+			ResponseError(c, CodeInvalidParam)
 			return
 		}
 		// validator.ValidationErrors类型错误则进行翻译
-		c.JSON(http.StatusOK, gin.H{
-			"msg": removeTopStruct(errs.Translate(trans)),
-		})
+		ResponseErrorWithMsg(c, CodeInvalidParam, removeTopStruct(errs.Translate(trans)))
+		//c.JSON(http.StatusOK, gin.H{
+		//	"msg": removeTopStruct(errs.Translate(trans)),
+		//})
 		return
 	}
 	//	c.JSON(http.StatusOK, gin.H{
@@ -51,15 +51,22 @@ func SignUpHandler(c *gin.Context) {
 
 	// 2. 业务处理
 	if err := logic.SignUp(&p); err != nil {
-		c.JSON(http.StatusOK, gin.H{
-			"msg": "注册失败！",
-		})
+		zap.L().Error("logic.SignUp failed", zap.Error(err))
+		if errors.Is(err, mysql.ErrorUserNotExist) {
+			ResponseError(c, CodeUserExist)
+			return
+		}
+		ResponseError(c, CodeServerBusy)
+		//c.JSON(http.StatusOK, gin.H{
+		//	"msg": "注册失败！",
+		//})
 		return
 	}
 	// 3. 返回响应
-	c.JSON(http.StatusOK, gin.H{
-		"msg": "success",
-	})
+	ResponseSuccess(c, nil)
+	//c.JSON(http.StatusOK, gin.H{
+	//	"msg": "success",
+	//})
 }
 
 func LoginHandler(c *gin.Context) {
@@ -71,25 +78,26 @@ func LoginHandler(c *gin.Context) {
 		// 判断errs是不是 validator.ValidationErrors 类型
 		errs, ok := err.(validator.ValidationErrors)
 		if !ok {
-			c.JSON(http.StatusOK, gin.H{
-				"msg": err.Error(),
-			})
+			ResponseError(c, CodeInvalidParam)
 			return
 		}
-		c.JSON(http.StatusOK, gin.H{
-			"msg": removeTopStruct(errs.Translate(trans)), //翻译错误
-		})
+		ResponseErrorWithMsg(c, CodeInvalidParam, removeTopStruct(errs.Translate(trans)))
+		//c.JSON(http.StatusOK, gin.H{
+		//	"msg": removeTopStruct(errs.Translate(trans)), //翻译错误
+		//})
 		return
 	}
 	// 2. 业务逻辑处理
-	if err := logic.Login(p); err != nil {
+	token, err := logic.Login(p)
+	if err != nil {
 		zap.L().Error("logic.Login failed!", zap.String("username", p.Username), zap.Error(err))
-		c.JSON(http.StatusOK, gin.H{
-			"msg": "登陆失败！",
-		})
+		if errors.Is(err, mysql.ErrorUserNotExist) {
+			ResponseError(c, CodeUserNotExist)
+			return
+		}
+		ResponseError(c, CodeServerBusy)
+		return
 	}
 	// 3. 返回响应
-	c.JSON(http.StatusOK, gin.H{
-		"msg": "success！",
-	})
+	ResponseSuccess(c, token)
 }
