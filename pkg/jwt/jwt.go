@@ -3,10 +3,11 @@ package jwt
 import (
 	"errors"
 	"github.com/dgrijalva/jwt-go"
+	"github.com/spf13/viper"
 	"time"
 )
 
-const TokenExpireDuration = time.Hour * 2
+//const TokenExpireDuration = time.Hour * 2
 
 // MySecret 用于加盐的字符串
 var MySecret = []byte("夏天夏天悄悄过去")
@@ -30,12 +31,13 @@ func GenToken(userId int64, username string) (string, error) {
 		userId,
 		username, // 自定义字段
 		jwt.StandardClaims{
-			ExpiresAt: time.Now().Add(TokenExpireDuration).Unix(),
+			ExpiresAt: time.Now().Add(time.Duration(viper.GetInt("auth.jwt_expire")) * time.Hour).Unix(),
 			Issuer:    "Web_app", // 签发人
 		},
 	}
 	// 使用指定的签名方法创建签名对象
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, c)
+
 	// 使用指定的secret签名并获得完整的编码后的字符串token
 	return token.SignedString(MySecret)
 }

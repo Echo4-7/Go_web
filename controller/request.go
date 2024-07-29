@@ -1,16 +1,17 @@
 package controller
 
 import (
-	"Web_app/middlewares"
 	"errors"
 	"github.com/gin-gonic/gin"
 )
+
+const ContextUserIdKey = "userId"
 
 var ErrorUserNotLogin = errors.New("用户未登录")
 
 // getRequestUser 获取当前登陆用户ID
 func getRequestUser(c *gin.Context) (userId int64, err error) {
-	uid, ok := c.Get(middlewares.ContextUserIdKey)
+	uid, ok := c.Get(ContextUserIdKey)
 	if !ok {
 		err = ErrorUserNotLogin
 		return

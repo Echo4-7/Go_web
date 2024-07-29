@@ -7,8 +7,6 @@ import (
 	"strings"
 )
 
-const ContextUserIdKey = "userId"
-
 // JWTAuthMiddleware 基于JWT的认证中间件
 func JWTAuthMiddleware() func(c *gin.Context) {
 	return func(c *gin.Context) {
@@ -25,7 +23,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 			c.Abort()
 			return
 		}
-		// 按空格分割
+		// 按空格分割 Authorization 字段
 		parts := strings.SplitN(authHeader, " ", 2)
 		if !(len(parts) == 2 && parts[0] == "Bearer") {
 			controller.ResponseError(c, controller.CodeInvalidToken)
@@ -48,7 +46,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 			return
 		}
 		// 将当前请求的useId信息保存到请求的上下文c上
-		c.Set(ContextUserIdKey, mc.UserId)
+		c.Set(controller.ContextUserIdKey, mc.UserId)
 		c.Next() // 后续的处理函数可以用过c.Get(ContextUserIdKey)来获取当前请求的用户信息
 	}
 }

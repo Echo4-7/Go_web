@@ -6,7 +6,7 @@ import (
 	"github.com/go-redis/redis"
 )
 
-// 声明一个全局的rdb变量
+// 声明一个全局的Rdb变量
 var rdb *redis.Client
 
 // Init 初始化连接
