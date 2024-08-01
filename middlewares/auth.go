@@ -45,7 +45,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 			c.Abort()
 			return
 		}
-		// 将当前请求的useId信息保存到请求的上下文c上
+		// 将当前请求的UserId信息保存到请求的上下文c上
 		c.Set(controller.ContextUserIdKey, mc.UserId)
 		c.Next() // 后续的处理函数可以用过c.Get(ContextUserIdKey)来获取当前请求的用户信息
 	}

@@ -16,3 +16,10 @@ func GetPostById(pid int64) (post *models.Post, err error) {
 	err = db.Get(post, sqlStr, pid)
 	return
 }
+
+func GetPostList(page, size int64) (posts []*models.Post, err error) {
+	posts = make([]*models.Post, 0, 2) // make([]T, length, capacity)
+	sqlStr := `select post_id, title, content, author_id, community_id, create_time from post limit ?,?`
+	err = db.Select(&posts, sqlStr, (page-1)*size, size)
+	return
+}
