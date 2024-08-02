@@ -5,6 +5,7 @@ import (
 	"Web_app/models"
 	"Web_app/pkg/jwt"
 	"Web_app/pkg/snowflake"
+	"go.uber.org/zap"
 )
 
 // 存放业务逻辑代码
@@ -28,15 +29,20 @@ func SignUp(p *models.ParamSignup) (err error) {
 	return mysql.InsertUser(user)
 }
 
-func Login(p *models.ParamLogin) (token string, err error) {
-	user := &models.User{
+func Login(p *models.ParamLogin) (user *models.User, err error) {
+	user = &models.User{
 		Username: p.Username,
 		Password: p.Password,
 	}
 	// 传递是指针，就能拿到 User.UserId
 	if err := mysql.Login(user); err != nil {
-		return "", err
+		return nil, err
 	}
 	// 生成JWT
-	return jwt.GenToken(user.UserId, user.Username)
+	token, err := jwt.GenToken(user.UserId, user.Username)
+	if err != nil {
+		zap.L().Error("jwt.GenToken failed", zap.Error(err))
+	}
+	user.Token = token
+	return
 }

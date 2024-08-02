@@ -19,7 +19,7 @@ func GetPostById(pid int64) (data *models.ApiPostDetail, err error) {
 	// 查询并组合接口想用的数据
 	post, err := mysql.GetPostById(pid)
 	if err != nil {
-		zap.L().Error("mysql.GetPostById failed", zap.Int64("pif", pid), zap.Error(err))
+		zap.L().Error("mysql.GetPostById failed", zap.Int64("pid", pid), zap.Error(err))
 		return
 	}
 
