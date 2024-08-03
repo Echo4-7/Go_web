@@ -225,3 +225,17 @@
 {"level":"INFO","time":"2024-07-31T17:37:00.734+0800","caller":"logger/logger.go:87","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"size=2&page=1","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.002316518}
 {"level":"INFO","time":"2024-07-31T17:37:36.397+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2024-07-31T17:37:36.398+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-03T16:38:28.580+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-03T16:39:53.451+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.015404868}
+{"level":"INFO","time":"2024-08-03T16:40:58.093+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"GET","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000023616}
+{"level":"INFO","time":"2024-08-03T16:41:15.108+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000269552}
+{"level":"INFO","time":"2024-08-03T16:42:59.689+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000198373}
+{"level":"INFO","time":"2024-08-03T16:44:12.255+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-03T16:44:12.255+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-03T16:44:14.757+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-03T16:44:18.036+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000392577}
+{"level":"INFO","time":"2024-08-03T16:50:15.059+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-03T16:50:15.059+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-03T22:49:25.521+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-03T22:49:50.105+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-03T22:49:50.106+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
