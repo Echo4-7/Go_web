@@ -36,6 +36,23 @@ var (
 	ErrorVoteTimeExpire = errors.New("投票时间已过")
 )
 
+func CreatePost(postID int64) error {
+
+	pipeline := client.TxPipeline()
+	// 帖子时间
+	pipeline.ZAdd(getRedisKey(KeyPostTimeZSet), redis.Z{
+		Score:  float64(time.Now().Unix()),
+		Member: postID,
+	})
+
+	// 帖子分数
+	pipeline.ZAdd(getRedisKey(KeyPostScoreZSet), redis.Z{
+		Score:  float64(time.Now().Unix()),
+		Member: postID,
+	})
+	_, err := pipeline.Exec()
+	return err
+}
 func VoteForPost(userID, postID string, value float64) error {
 	// 1. 判断投票的限制
 	// 去redis取帖子发布时间
@@ -43,6 +60,8 @@ func VoteForPost(userID, postID string, value float64) error {
 	if float64(time.Now().Unix())-postTime > oneWeekInSeconds {
 		return ErrorVoteTimeExpire
 	}
+	// 2和3需要放到一个pipeline事务中操作
+
 	// 2. 更新帖子的分数
 	// 先查当前用户给当前帖子的投票记录
 	ov := client.ZScore(getRedisKey(KeyPostVotedZSetPrefix+postID), userID).Val()
@@ -52,19 +71,19 @@ func VoteForPost(userID, postID string, value float64) error {
 	} else {
 		op = -1
 	}
-	diff := math.Abs(ov - value)                                                                   // 计算两次投票的差值
-	_, err := client.ZIncrBy(getRedisKey(KeyPostScoreZSet), op*diff*scorePerVote, postID).Result() // client.ZIncrBy() 函数用于在 Redis 有序集合中对指定成员的分数进行增量更新，返回一个包含查询结果的命令对象
-	if ErrorVoteTimeExpire != nil {
-		return err
-	}
+	diff := math.Abs(ov - value) // 计算两次投票的差值
+
+	pipeline := client.TxPipeline()
+	pipeline.ZIncrBy(getRedisKey(KeyPostScoreZSet), op*diff*scorePerVote, postID) // client.ZIncrBy() 函数用于在 Redis 有序集合中对指定成员的分数进行增量更新，返回一个包含查询结果的命令对象
 	// 3. 记录用户为该帖子投票的数据
 	if value == 0 {
-		_, err = client.ZRem(getRedisKey(KeyPostVotedZSetPrefix+postID), userID).Result()
+		pipeline.ZRem(getRedisKey(KeyPostVotedZSetPrefix+postID), userID)
 	} else {
-		_, err = client.ZAdd(getRedisKey(KeyPostVotedZSetPrefix+postID), redis.Z{
+		pipeline.ZAdd(getRedisKey(KeyPostVotedZSetPrefix+postID), redis.Z{
 			Score:  value, // 赞成票还是反对票
 			Member: userID,
-		}).Result()
+		})
 	}
+	_, err := pipeline.Exec()
 	return err
 }

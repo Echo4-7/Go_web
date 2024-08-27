@@ -239,3 +239,245 @@
 {"level":"DEBUG","time":"2024-08-03T22:49:25.521+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
 {"level":"INFO","time":"2024-08-03T22:49:50.105+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2024-08-03T22:49:50.106+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T12:53:17.970+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T12:53:34.862+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.015560314}
+{"level":"INFO","time":"2024-08-12T12:54:01.760+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000161375}
+{"level":"INFO","time":"2024-08-12T13:08:06.792+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000158121}
+{"level":"INFO","time":"2024-08-12T13:13:34.416+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000118234}
+{"level":"INFO","time":"2024-08-12T13:14:32.938+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00010842}
+{"level":"INFO","time":"2024-08-12T13:16:03.468+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T13:16:03.469+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T13:16:05.980+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T13:16:08.925+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000218185}
+{"level":"INFO","time":"2024-08-12T13:16:13.764+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000078506}
+{"level":"INFO","time":"2024-08-12T13:16:42.005+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000182773}
+{"level":"INFO","time":"2024-08-12T13:18:10.748+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T13:18:10.749+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T13:18:13.090+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T13:18:30.905+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000325022}
+{"level":"INFO","time":"2024-08-12T13:28:06.862+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000084623}
+{"level":"INFO","time":"2024-08-12T13:28:22.084+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000096286}
+{"level":"INFO","time":"2024-08-12T13:30:09.073+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000110519}
+{"level":"INFO","time":"2024-08-12T13:35:50.760+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000035918}
+{"level":"DEBUG","time":"2024-08-12T13:36:17.719+0800","caller":"controller/post.go:17","msg":"c.ShouldBindJSON(p) error","err":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"ERROR","time":"2024-08-12T13:36:17.719+0800","caller":"controller/post.go:18","msg":"create post with invalid param"}
+{"level":"INFO","time":"2024-08-12T13:36:17.719+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000550718}
+{"level":"DEBUG","time":"2024-08-12T13:39:29.808+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-08-12T13:39:37.403+0800","caller":"controller/post.go:17","msg":"c.ShouldBindJSON(p) error","err":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"ERROR","time":"2024-08-12T13:39:37.404+0800","caller":"controller/post.go:18","msg":"create post with invalid param"}
+{"level":"INFO","time":"2024-08-12T13:39:37.404+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000988278}
+{"level":"INFO","time":"2024-08-12T13:44:49.330+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T13:44:49.331+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T13:44:50.931+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-08-12T13:44:54.138+0800","caller":"controller/post.go:17","msg":"c.ShouldBindJSON(p) error","err":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"ERROR","time":"2024-08-12T13:44:54.138+0800","caller":"controller/post.go:18","msg":"create post with invalid param"}
+{"level":"INFO","time":"2024-08-12T13:44:54.138+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000461698}
+{"level":"INFO","time":"2024-08-12T13:45:51.522+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T13:45:51.523+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T13:46:37.244+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-08-12T13:46:39.767+0800","caller":"controller/post.go:17","msg":"c.ShouldBindJSON(p) error","err":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"ERROR","time":"2024-08-12T13:46:39.768+0800","caller":"controller/post.go:18","msg":"create post with invalid param"}
+{"level":"INFO","time":"2024-08-12T13:46:39.768+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000263614}
+{"level":"DEBUG","time":"2024-08-12T13:53:00.491+0800","caller":"controller/post.go:17","msg":"c.ShouldBindJSON(p) error","err":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"ERROR","time":"2024-08-12T13:53:00.491+0800","caller":"controller/post.go:18","msg":"create post with invalid param"}
+{"level":"INFO","time":"2024-08-12T13:53:00.491+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000489423}
+{"level":"INFO","time":"2024-08-12T13:53:16.229+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000172629}
+{"level":"DEBUG","time":"2024-08-12T14:30:50.433+0800","caller":"controller/post.go:17","msg":"c.ShouldBindJSON(p) error","err":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"ERROR","time":"2024-08-12T14:30:50.433+0800","caller":"controller/post.go:18","msg":"create post with invalid param"}
+{"level":"INFO","time":"2024-08-12T14:30:50.433+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000548985}
+{"level":"INFO","time":"2024-08-12T14:31:47.571+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000102678}
+{"level":"INFO","time":"2024-08-12T14:34:32.305+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000388612}
+{"level":"INFO","time":"2024-08-12T14:34:48.152+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000087831}
+{"level":"INFO","time":"2024-08-12T14:35:10.820+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000127944}
+{"level":"INFO","time":"2024-08-12T14:36:18.760+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote1","status":200,"method":"POST","path":"/api/v1/vote1","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000035736}
+{"level":"INFO","time":"2024-08-12T14:36:40.292+0800","caller":"logger/logger.go:87","msg":"/api2/v1/vote","status":200,"method":"POST","path":"/api2/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000025995}
+{"level":"INFO","time":"2024-08-12T14:36:45.154+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000469483}
+{"level":"INFO","time":"2024-08-12T14:37:40.093+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000087213}
+{"level":"INFO","time":"2024-08-12T14:37:50.095+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000117996}
+{"level":"INFO","time":"2024-08-12T14:39:27.364+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000719116}
+{"level":"INFO","time":"2024-08-12T14:39:58.933+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000114383}
+{"level":"INFO","time":"2024-08-12T14:40:25.348+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"GET","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000036454}
+{"level":"INFO","time":"2024-08-12T14:40:25.380+0800","caller":"logger/logger.go:87","msg":"/favicon.ico","status":200,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000018477}
+{"level":"INFO","time":"2024-08-12T14:40:52.668+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"GET","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000038878}
+{"level":"INFO","time":"2024-08-12T14:40:56.954+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000110524}
+{"level":"DEBUG","time":"2024-08-12T14:42:43.725+0800","caller":"controller/post.go:17","msg":"c.ShouldBindJSON(p) error","err":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"ERROR","time":"2024-08-12T14:42:43.725+0800","caller":"controller/post.go:18","msg":"create post with invalid param"}
+{"level":"INFO","time":"2024-08-12T14:42:43.725+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000211763}
+{"level":"INFO","time":"2024-08-12T14:44:37.908+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T14:44:37.909+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T14:44:47.092+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T14:47:09.357+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":131.478497245}
+{"level":"INFO","time":"2024-08-12T14:48:52.488+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"x=ss","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":5.760004051}
+{"level":"INFO","time":"2024-08-12T14:49:38.580+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":3.414117863}
+{"level":"INFO","time":"2024-08-12T14:50:18.148+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":3.836438477}
+{"level":"INFO","time":"2024-08-12T14:50:36.573+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":4.636850478}
+{"level":"INFO","time":"2024-08-12T14:53:10.380+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":140.179465196}
+{"level":"INFO","time":"2024-08-12T14:53:48.874+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00016748}
+{"level":"INFO","time":"2024-08-12T14:54:44.521+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.001151538}
+{"level":"INFO","time":"2024-08-12T14:55:11.660+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":10.391166756}
+{"level":"INFO","time":"2024-08-12T14:55:11.661+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T14:55:11.661+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T14:55:15.244+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T14:55:18.616+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000262671}
+{"level":"INFO","time":"2024-08-12T14:55:34.973+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T14:55:34.973+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T14:55:50.474+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T14:55:56.721+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000167759}
+{"level":"INFO","time":"2024-08-12T14:56:08.694+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00106556}
+{"level":"INFO","time":"2024-08-12T14:56:23.430+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000114538}
+{"level":"INFO","time":"2024-08-12T14:56:31.436+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000086415}
+{"level":"INFO","time":"2024-08-12T14:56:41.207+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000197997}
+{"level":"INFO","time":"2024-08-12T14:56:49.870+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.008072248}
+{"level":"INFO","time":"2024-08-12T14:57:16.972+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000081585}
+{"level":"INFO","time":"2024-08-12T14:57:43.957+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000097475}
+{"level":"INFO","time":"2024-08-12T14:58:33.946+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000134565}
+{"level":"INFO","time":"2024-08-12T14:58:58.263+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T14:58:58.263+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T14:59:00.201+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T14:59:03.638+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000429705}
+{"level":"INFO","time":"2024-08-12T14:59:06.027+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000081635}
+{"level":"INFO","time":"2024-08-12T14:59:24.614+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000199318}
+{"level":"INFO","time":"2024-08-12T15:00:11.536+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000127151}
+{"level":"INFO","time":"2024-08-12T15:01:57.551+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T15:01:57.551+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T15:01:59.206+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T15:02:02.628+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000182365}
+{"level":"INFO","time":"2024-08-12T15:02:09.867+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000098666}
+{"level":"INFO","time":"2024-08-12T15:02:16.996+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000134845}
+{"level":"INFO","time":"2024-08-12T15:02:25.194+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000071916}
+{"level":"INFO","time":"2024-08-12T15:03:43.280+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000102724}
+{"level":"INFO","time":"2024-08-12T15:03:54.041+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T15:03:54.041+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T15:03:56.730+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T15:04:04.827+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000325755}
+{"level":"INFO","time":"2024-08-12T15:04:09.058+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.002888398}
+{"level":"DEBUG","time":"2024-08-12T15:04:17.806+0800","caller":"controller/post.go:17","msg":"c.ShouldBindJSON(p) error","err":"json: cannot unmarshal string into Go struct field Post.community_id of type int64"}
+{"level":"ERROR","time":"2024-08-12T15:04:17.806+0800","caller":"controller/post.go:18","msg":"create post with invalid param"}
+{"level":"INFO","time":"2024-08-12T15:04:17.806+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000284197}
+{"level":"INFO","time":"2024-08-12T15:04:24.578+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.007173023}
+{"level":"INFO","time":"2024-08-12T15:04:59.106+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000134143}
+{"level":"INFO","time":"2024-08-12T15:05:10.780+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000298644}
+{"level":"INFO","time":"2024-08-12T15:05:42.082+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000107654}
+{"level":"INFO","time":"2024-08-12T15:06:19.742+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000172706}
+{"level":"INFO","time":"2024-08-12T15:06:31.493+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00016433}
+{"level":"INFO","time":"2024-08-12T15:06:53.182+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000181953}
+{"level":"INFO","time":"2024-08-12T15:07:38.154+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000124285}
+{"level":"INFO","time":"2024-08-12T15:07:39.536+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000123233}
+{"level":"INFO","time":"2024-08-12T15:07:52.896+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T15:07:52.897+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T15:07:54.314+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T15:07:59.094+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000569805}
+{"level":"INFO","time":"2024-08-12T15:08:07.411+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T15:08:07.412+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T15:08:08.610+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T15:09:06.900+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000444638}
+{"level":"INFO","time":"2024-08-12T15:09:10.108+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T15:09:10.108+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T15:09:39.110+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-12T15:09:43.072+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000425502}
+{"level":"INFO","time":"2024-08-12T15:10:12.758+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"GET","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000081724}
+{"level":"INFO","time":"2024-08-12T15:10:12.789+0800","caller":"logger/logger.go:87","msg":"/favicon.ico","status":200,"method":"GET","path":"/favicon.ico","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36","errors":"","cost":0.000027562}
+{"level":"INFO","time":"2024-08-12T15:10:16.180+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000113675}
+{"level":"INFO","time":"2024-08-12T15:10:18.430+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000177399}
+{"level":"INFO","time":"2024-08-12T15:10:18.772+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000174444}
+{"level":"INFO","time":"2024-08-12T15:10:19.454+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000093669}
+{"level":"INFO","time":"2024-08-12T15:10:20.169+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000134773}
+{"level":"INFO","time":"2024-08-12T15:10:34.471+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000239141}
+{"level":"INFO","time":"2024-08-12T15:10:35.625+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000174114}
+{"level":"INFO","time":"2024-08-12T15:11:12.540+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000108155}
+{"level":"INFO","time":"2024-08-12T15:11:23.884+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000129123}
+{"level":"INFO","time":"2024-08-12T15:11:43.190+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000050992}
+{"level":"INFO","time":"2024-08-12T15:11:48.098+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000304402}
+{"level":"INFO","time":"2024-08-12T15:15:56.606+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":193.599971784}
+{"level":"INFO","time":"2024-08-12T15:16:26.284+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":8.343096709}
+{"level":"INFO","time":"2024-08-12T15:16:26.285+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T15:16:26.285+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-12T15:16:28.816+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-08-12T15:16:40.723+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"8439819873030144","direction":1}
+{"level":"ERROR","time":"2024-08-12T15:16:40.724+0800","caller":"controller/vote.go:39","msg":"logic.VoteForPost failed","error":"投票时间已过"}
+{"level":"INFO","time":"2024-08-12T15:16:40.724+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":8.051311762}
+{"level":"INFO","time":"2024-08-12T15:39:39.767+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-12T15:39:39.767+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-26T20:18:41.387+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-26T20:19:49.488+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000216085}
+{"level":"INFO","time":"2024-08-26T20:20:08.968+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.008424085}
+{"level":"INFO","time":"2024-08-26T20:20:43.362+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.007359743}
+{"level":"DEBUG","time":"2024-08-26T20:24:18.963+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13594759964659712","direction":1}
+{"level":"ERROR","time":"2024-08-26T20:24:18.964+0800","caller":"controller/vote.go:39","msg":"logic.VoteForPost failed","error":"投票时间已过"}
+{"level":"INFO","time":"2024-08-26T20:24:18.964+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.001114846}
+{"level":"INFO","time":"2024-08-26T20:31:37.938+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-26T20:31:37.938+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-26T20:31:40.004+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-08-26T20:31:50.022+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13594759964659712","direction":1}
+{"level":"ERROR","time":"2024-08-26T20:31:50.022+0800","caller":"controller/vote.go:39","msg":"logic.VoteForPost failed","error":"投票时间已过"}
+{"level":"INFO","time":"2024-08-26T20:31:50.023+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.0011058}
+{"level":"INFO","time":"2024-08-26T20:35:30.663+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-26T20:35:30.663+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-26T20:35:32.280+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-08-26T20:35:34.948+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13594759964659712","direction":1}
+{"level":"ERROR","time":"2024-08-26T20:35:34.948+0800","caller":"controller/vote.go:39","msg":"logic.VoteForPost failed","error":"投票时间已过"}
+{"level":"INFO","time":"2024-08-26T20:35:34.948+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000747829}
+{"level":"INFO","time":"2024-08-26T20:37:46.046+0800","caller":"logger/logger.go:87","msg":"/api/v1/posts/2","status":200,"method":"POST","path":"/api/v1/posts/2","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000037721}
+{"level":"INFO","time":"2024-08-26T20:37:57.162+0800","caller":"logger/logger.go:87","msg":"/api/v1/posts/2","status":200,"method":"GET","path":"/api/v1/posts/2","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000019096}
+{"level":"INFO","time":"2024-08-26T20:38:06.471+0800","caller":"logger/logger.go:87","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.004234184}
+{"level":"DEBUG","time":"2024-08-26T20:38:36.592+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13594759964659712","direction":1}
+{"level":"ERROR","time":"2024-08-26T20:38:36.593+0800","caller":"controller/vote.go:39","msg":"logic.VoteForPost failed","error":"投票时间已过"}
+{"level":"INFO","time":"2024-08-26T20:38:36.593+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000315461}
+{"level":"INFO","time":"2024-08-26T20:41:12.026+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-26T20:41:12.027+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-26T20:41:21.926+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-08-26T20:41:26.197+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13594759964659712","direction":1}
+{"level":"ERROR","time":"2024-08-26T20:41:26.198+0800","caller":"controller/vote.go:39","msg":"logic.VoteForPost failed","error":"投票时间已过"}
+{"level":"INFO","time":"2024-08-26T20:41:26.198+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000952743}
+{"level":"INFO","time":"2024-08-26T20:48:05.707+0800","caller":"logger/logger.go:87","msg":"/api/v1/post","status":200,"method":"POST","path":"/api/v1/post","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.004943101}
+{"level":"INFO","time":"2024-08-26T20:48:31.034+0800","caller":"logger/logger.go:87","msg":"/api/v1/posts/","status":200,"method":"GET","path":"/api/v1/posts/","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.002669572}
+{"level":"DEBUG","time":"2024-08-26T20:49:02.852+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":1}
+{"level":"INFO","time":"2024-08-26T20:49:02.854+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.002268392}
+{"level":"INFO","time":"2024-08-26T21:29:44.560+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-26T21:29:44.560+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-26T21:29:46.276+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-26T21:30:08.034+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000309945}
+{"level":"INFO","time":"2024-08-26T21:30:50.223+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000116727}
+{"level":"INFO","time":"2024-08-26T21:30:54.934+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-26T21:30:54.934+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-26T21:30:56.759+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"DEBUG","time":"2024-08-26T21:31:00.189+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":0}
+{"level":"INFO","time":"2024-08-26T21:31:00.190+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00093797}
+{"level":"INFO","time":"2024-08-26T21:31:12.678+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00011201}
+{"level":"INFO","time":"2024-08-26T21:31:30.314+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000084884}
+{"level":"INFO","time":"2024-08-26T21:32:42.066+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000066401}
+{"level":"DEBUG","time":"2024-08-26T21:33:02.604+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":1}
+{"level":"ERROR","time":"2024-08-26T21:33:02.605+0800","caller":"controller/vote.go:39","msg":"logic.VoteForPost failed","error":"投票时间已过"}
+{"level":"INFO","time":"2024-08-26T21:33:02.605+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000359086}
+{"level":"DEBUG","time":"2024-08-26T21:33:34.039+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":0}
+{"level":"INFO","time":"2024-08-26T21:33:34.040+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.001373045}
+{"level":"INFO","time":"2024-08-26T21:36:16.983+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-26T21:36:16.984+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-26T21:36:19.848+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-26T21:36:27.025+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000287289}
+{"level":"DEBUG","time":"2024-08-26T21:36:33.104+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":0}
+{"level":"INFO","time":"2024-08-26T21:36:33.105+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.001087499}
+{"level":"DEBUG","time":"2024-08-26T21:36:59.980+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":1}
+{"level":"INFO","time":"2024-08-26T21:36:59.981+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00113268}
+{"level":"DEBUG","time":"2024-08-26T21:37:32.277+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":0}
+{"level":"INFO","time":"2024-08-26T21:37:32.277+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000815462}
+{"level":"DEBUG","time":"2024-08-26T21:37:48.083+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":0}
+{"level":"INFO","time":"2024-08-26T21:37:48.084+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.00061907}
+{"level":"DEBUG","time":"2024-08-26T21:38:07.055+0800","caller":"logic/vote.go:35","msg":"VoteForPost","userID":2303903953584128,"postID":"13601648471445504","direction":0}
+{"level":"INFO","time":"2024-08-26T21:38:07.055+0800","caller":"logger/logger.go:87","msg":"/api/v1/vote","status":200,"method":"POST","path":"/api/v1/vote","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.000791599}
+{"level":"INFO","time":"2024-08-26T21:39:03.660+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-26T21:39:03.660+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-27T22:00:38.473+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-27T22:01:45.500+0800","caller":"logger/logger.go:87","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.017118592}
+{"level":"ERROR","time":"2024-08-27T22:02:05.511+0800","caller":"controller/post.go:99","msg":"logic.GetPostList failed","error":"EOF"}
+{"level":"INFO","time":"2024-08-27T22:02:05.512+0800","caller":"logger/logger.go:87","msg":"/api/v1/posts2","status":200,"method":"GET","path":"/api/v1/posts2","query":"page=1&size=2&order=time","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.001362466}
+{"level":"INFO","time":"2024-08-27T22:05:48.365+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-27T22:05:48.366+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-27T22:05:51.134+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-27T22:05:54.513+0800","caller":"logger/logger.go:87","msg":"/api/v1/posts2","status":200,"method":"GET","path":"/api/v1/posts2","query":"page=1&size=2&order=time","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.005272476}
+{"level":"INFO","time":"2024-08-27T22:09:34.103+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-27T22:09:34.103+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2024-08-27T22:09:36.251+0800","caller":"Web_app/main.go:35","msg":"logger init success..."}
+{"level":"INFO","time":"2024-08-27T22:09:38.365+0800","caller":"logger/logger.go:87","msg":"/api/v1/posts2","status":200,"method":"GET","path":"/api/v1/posts2","query":"page=1&size=2&order=time","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.40.0","errors":"","cost":0.008808443}
+{"level":"INFO","time":"2024-08-27T22:09:51.842+0800","caller":"Web_app/main.go:85","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2024-08-27T22:09:51.843+0800","caller":"Web_app/main.go:94","msg":"Server exiting"}
