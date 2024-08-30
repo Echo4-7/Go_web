@@ -20,6 +20,21 @@ import (
 	"time"
 )
 
+// @title Web_app
+// @version 1.0
+// @description 这是一个go的练手项目.....
+// @termsOfService http://swagger.io/terms/
+
+// @contact.name Echo4-7
+// @contact.url http://www.swagger.io/support
+// @contact.email 2098128799@qq.com
+
+// @license.name Apache 2.0
+// @license.url http://www.apache.org/licenses/LICENSE-2.0.html
+
+// @host 127.0.0.1:8080
+// @BasePath /api/v1
+
 func main() {
 	//1. 加载配置
 	if err := settings.Init(); err != nil {

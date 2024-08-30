@@ -29,13 +29,8 @@ type ParamVoteData struct {
 
 // ParamPostList 获取帖子列表query string参数
 type ParamPostList struct {
-	Page  int64  `json:"page" form:"page"`
-	Size  int64  `json:"size" form:"size"`
-	Order string `json:"order" form:"order"`
-}
-
-// ParamPostList 获取帖子列表query string参数
-type ParamCommunityPostList struct {
-	*ParamPostList
-	CommunityID int64 `json:"community_id" form:"community_id"`
+	CommunityID int64  `json:"community_id" form:"community_id"`   // 可以为空
+	Page        int64  `json:"page" form:"page"`                   // 页码
+	Size        int64  `json:"size" form:"size"`                   // 每页数据量
+	Order       string `json:"order" form:"order" example:"score"` // 排序依据
 }

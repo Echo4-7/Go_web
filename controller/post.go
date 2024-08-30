@@ -73,12 +73,23 @@ func GetPostListHandler(c *gin.Context) {
 }
 
 // GetPostListHandler2 升级版帖子列表接口
-// 根据前端传来的参数动态获取帖子列表
-// 按创建时间排序或者按照分数排序
-// 1. 获取参数
-// 2. 去redis查询ID值
-// 3. 根据ID去数据库查询帖子详细信息
+// @Summary 升级版帖子列表接口
+// @Description 根据前端传来的参数动态获取帖子列表,按时间或按分数
+// @Tags 帖子相关接口
+// @Accept application/json
+// @Produce application/json
+// @Param Authorization header string false "Bearer JWT"
+// @Param object query models.ParamPostList false "查询参数"
+// @Security ApiKeyAuth
+// @Success 200 {object} _ResponsePostList
+// @Router /posts2 [get]
 func GetPostListHandler2(c *gin.Context) {
+	// 根据前端传来的参数动态获取帖子列表
+	// 按创建时间排序或者按照分数排序
+	// 1. 获取参数
+	// 2. 去redis查询ID值
+	// 3. 根据ID去数据库查询帖子详细信息
+
 	// GET请求参数(query string)：/api/v1/posts2?page=1&size=10&order=time
 	// 初始化结构体时指定初始参数
 	p := &models.ParamPostList{
@@ -93,8 +104,9 @@ func GetPostListHandler2(c *gin.Context) {
 		ResponseError(c, CodeInvalidParam)
 		return
 	}
-	// 获取数据
-	data, err := logic.GetPostList2(p)
+
+	data, err := logic.GetPostListNew(p) // 更新：合二为一
+
 	if err != nil {
 		zap.L().Error("logic.GetPostList failed", zap.Error(err))
 		ResponseError(c, CodeServerBusy)
@@ -105,29 +117,29 @@ func GetPostListHandler2(c *gin.Context) {
 }
 
 // GetCommunityPostListHandler 根据社区去查询帖子列表
-func GetCommunityPostListHandler(c *gin.Context) {
-	// 初始化结构体时指定初始参数
-	p := &models.ParamCommunityPostList{
-		ParamPostList: &models.ParamPostList{
-			Page:  1,
-			Size:  10,
-			Order: models.OrderTime,
-		},
-	}
-	//c.ShouldBind() 根据请求的数据类型选择相应的方法去获取数据
-	//c.ShouldBindJSON() 如果请求中携带的是json格式的数据，、才能用这个方法获取到数据
-	if err := c.ShouldBindQuery(p); err != nil {
-		zap.L().Error("GetCommunityPostListHandler with invalid params", zap.Error(err))
-		ResponseError(c, CodeInvalidParam)
-		return
-	}
-	// 获取数据
-	data, err := logic.GetCommunityPostList(p)
-	if err != nil {
-		zap.L().Error("logic.GetCommunityPostList failed", zap.Error(err))
-		ResponseError(c, CodeServerBusy)
-		return
-	}
-	// 返回响应
-	ResponseSuccess(c, data)
-}
+//func GetCommunityPostListHandler(c *gin.Context) {
+//	// 初始化结构体时指定初始参数
+//	p := &models.ParamCommunityPostList{
+//		ParamPostList: &models.ParamPostList{
+//			Page:  1,
+//			Size:  10,
+//			Order: models.OrderTime,
+//		},
+//	}
+//	//c.ShouldBind() 根据请求的数据类型选择相应的方法去获取数据
+//	//c.ShouldBindJSON() 如果请求中携带的是json格式的数据，、才能用这个方法获取到数据
+//	if err := c.ShouldBindQuery(p); err != nil {
+//		zap.L().Error("GetCommunityPostListHandler with invalid params", zap.Error(err))
+//		ResponseError(c, CodeInvalidParam)
+//		return
+//	}
+//	// 获取数据
+//	data, err := logic.GetCommunityPostList(p)
+//	if err != nil {
+//		zap.L().Error("logic.GetCommunityPostList failed", zap.Error(err))
+//		ResponseError(c, CodeServerBusy)
+//		return
+//	}
+//	// 返回响应
+//	ResponseSuccess(c, data)
+//}

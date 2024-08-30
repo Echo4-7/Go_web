@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func getIDsFromKey(key string, page ,size int64) ([]string, error) {
+func getIDsFromKey(key string, page, size int64) ([]string, error) {
 	// 2. 确定查询的索引起始点
 	start := (page - 1) * size
 	end := start + size - 1
@@ -54,7 +54,7 @@ func GetPostVoteData(ids []string) (data []int64, err error) {
 }
 
 // GetCommunityPostIDsInOrder 按社区查询ids
-func GetCommunityPostIDsInOrder(p *models.ParamCommunityPostList) ([]string, error) {
+func GetCommunityPostIDsInOrder(p *models.ParamPostList) ([]string, error) {
 	orderKey := getRedisKey(KeyPostTimeZSet)
 	if p.Order == models.OrderScore {
 		orderKey = getRedisKey(KeyPostScoreZSet)
@@ -73,7 +73,7 @@ func GetCommunityPostIDsInOrder(p *models.ParamCommunityPostList) ([]string, err
 		pipeline.ZInterStore(key, redis.ZStore{
 			Aggregate: "MAX",
 		}, cKey, orderKey) // ZInterStore 计算
-		pipeline.Expire(key, 60 * time.Second) // 设置超时时间
+		pipeline.Expire(key, 60*time.Second) // 设置超时时间
 		_, err := pipeline.Exec()
 		if err != nil {
 			return nil, err

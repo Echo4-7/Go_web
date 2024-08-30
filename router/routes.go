@@ -2,10 +2,14 @@ package router
 
 import (
 	"Web_app/controller"
+	_ "Web_app/docs"
 	"Web_app/logger"
 	"Web_app/middlewares"
 	"github.com/gin-gonic/gin"
+	swaggerFiles "github.com/swaggo/files"
+	gs "github.com/swaggo/gin-swagger"
 	"net/http"
+	"time"
 )
 
 func SetupRouter(mode string) *gin.Engine {
@@ -13,7 +17,14 @@ func SetupRouter(mode string) *gin.Engine {
 		gin.SetMode(gin.ReleaseMode) // gin设置成发布模式
 	}
 	r := gin.New()
-	r.Use(logger.GinLogger(), logger.GinRecovery(true))
+	r.Use(logger.GinLogger(), logger.GinRecovery(true), middlewares.RateLimitMiddleware(2*time.Second, 1))
+
+	// 进行默认初始化和注册对应的路由 注册一个针对 swagger 的路由
+	r.GET("/swagger/*any", gs.WrapHandler(swaggerFiles.Handler))
+
+	r.GET("/ping", func(c *gin.Context) {
+		c.String(http.StatusOK, "pong")
+	})
 
 	// 路由的分发
 	v1 := r.Group("/api/v1")
